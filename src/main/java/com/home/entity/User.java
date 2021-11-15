@@ -1,5 +1,6 @@
 package com.home.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -18,7 +19,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class User {
+public class User implements Serializable{
 	@Id
 	@Column(name="Id")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
